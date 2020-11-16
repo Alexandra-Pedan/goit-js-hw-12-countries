@@ -1,0 +1,17 @@
+<div class="card">
+
+    <h1>{{name}}</h1>
+    <p><strong>Capital:</strong> {{capital}}</p>
+    <p><strong>Population:</strong> {{population}}</p>
+    <ul><strong>Languages:</strong>
+        {{#each languages}}
+        <li>{{iso639_1}}</li>
+        <li>{{iso639_2}}</li>
+        <li>{{name}}</li>
+        <li>{{nativeName}}</li>
+        {{/each}}
+    </ul>
+    <div>
+        <img src="{{flag}}" alt="flag">
+    </div>
+</div>
